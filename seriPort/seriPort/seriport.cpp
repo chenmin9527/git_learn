@@ -58,8 +58,6 @@ void seriPort::recData2() {
 void seriPort::on_pushButton_clicked()
 {
 	QByteArray w_char;
-	SEDDATA p_sendData;
-
 	w_char.append(char(0x01));//从机地址
 	w_char.append(char(0x03));//功能号
 	w_char.append(char(0x00));//地址
